@@ -5,8 +5,8 @@ Implementation of Augmented BNF for Syntax Specifications
 This is a small package for those folks who get way too interested in the ABNF
 found across so many RFCs.
 
-It's likely that this isn't a fully compliant implementation so please feel free
-to lodge an issue if you hit something.
+It's likely that this isn't a fully featured or compliant implementation so
+please feel free to lodge an issue if you hit something.
 
 ## Getting started
 

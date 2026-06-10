@@ -3,18 +3,17 @@ description: A starting point for Dart libraries or applications.
 version: 0.1.0-dev.1
 repository: https://github.com/bettongia/abnf
 issue_tracker: https://github.com/bettongia/abnf/issues
-publish_to: none
 
 topics:
   - parser
+  - strings
 
 environment:
   sdk: ^3.12.0
 
 # Add regular dependencies here.
 dependencies:
-  betto_common:
-    git: git@github.com:bettongia/common.git
+  betto_common: 0.1.0-dev.1
   characters: ^1.4.1
 
 dev_dependencies:
