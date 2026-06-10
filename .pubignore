@@ -1,0 +1,7 @@
+.claude
+.dart-tool
+build/
+coverage/
+doc/
+addlicense_config.txt
+tool/
