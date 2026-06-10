@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import 'package:betto_abnf/abnf.dart';
+import 'package:betto_abnf/betto_abnf.dart';
 
 void main() {
   // This is a very basic grammar that only accepts strings that

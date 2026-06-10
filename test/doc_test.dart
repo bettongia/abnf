@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import 'package:betto_abnf/abnf.dart';
+import 'package:betto_abnf/betto_abnf.dart';
 import 'package:test/test.dart';
 
 /// Tests that mirror the README example code so the documented API

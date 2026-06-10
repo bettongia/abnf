@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import 'package:betto_abnf/abnf.dart' show alternativeLiterals;
+import 'package:betto_abnf/betto_abnf.dart' show alternativeLiterals;
 import 'package:test/test.dart' as t;
 
 void main() {
