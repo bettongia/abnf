@@ -1,5 +1,5 @@
 name: betto_abnf
-description: A starting point for Dart libraries or applications.
+description: Implementation of Augmented BNF for Syntax Specifications
 version: 0.1.0-dev.1
 repository: https://github.com/bettongia/abnf
 issue_tracker: https://github.com/bettongia/abnf/issues
