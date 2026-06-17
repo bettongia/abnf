@@ -1,8 +1,9 @@
 name: betto_abnf
 description: Implementation of Augmented BNF for Syntax Specifications
-version: 0.1.0-dev.1
+version: 0.1.0-dev.2
 repository: https://github.com/bettongia/abnf
 issue_tracker: https://github.com/bettongia/abnf/issues
+homepage: https://bettongia.github.io/abnf/
 
 topics:
   - parser

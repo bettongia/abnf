@@ -3,6 +3,8 @@
 build/
 coverage/
 doc/
+docs/
+site/
 integration_test_app/
 Containerfile
 Makefile

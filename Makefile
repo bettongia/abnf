@@ -1,5 +1,7 @@
 .DEFAULT_GOAL := default
 
+include site.mk
+
 SOURCE_FILES=lib/**/*.dart
 TEST_FILES=test/**/*.dart
 
@@ -9,7 +11,7 @@ ADDLICENSE_CONFIG=addlicense_config.txt
 
 # BEGIN: Primary tasks
 
-default: clean prepare license_check format analyze test coverage doc
+default: clean prepare license_check format analyze test doc_site
 .PHONY: all
 
 cicd: default
@@ -32,10 +34,17 @@ analyze:
 	dart analyze
 .PHONY: analyze
 
-coverage:
-	dart run coverage:test_with_coverage --out $(COVERAGE_DIR)
-	genhtml $(COVERAGE_DIR)/lcov.info -o $(COVERAGE_DIR)/html
+coverage: coverage.log
 .PHONY: coverage
+
+coverage.log: lib/** test/**
+	# flutter test --coverage
+	dart test --coverage-path=coverage/lcov.info
+	rm -rf $(SITE_DIR)/coverage
+	mkdir -p $(SITE_DIR)/coverage
+	genhtml coverage/lcov.info \
+		--legend \
+		-o $(SITE_DIR)/coverage
 
 license_check:
 	@echo "Checking for license headers..."
@@ -56,4 +65,5 @@ prepare:
 clean:
 	rm -rf $(DOC_DIR)
 	rm -rf $(COVERAGE_DIR)
+	rm -rf site
 .PHONY: clean
